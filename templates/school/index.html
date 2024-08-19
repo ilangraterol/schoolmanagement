@@ -1,6 +1,540 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en" dir="ltr">
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - School</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'general/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'general/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'general/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'general/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'general/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'general/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'general/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'general/css/main.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'general/img/logo.png' %}" alt=""> 
+        <h1 class="sitename">School</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">Nosotros</a></li>
+       
+          <li><a href="#pricing">Precios</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="/adminlogin">Entrar</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Sistema de Gestion Escolar</h1>
+            <p>Software para gestionar los datos de un colegio</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Conocer mas</a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'general/img/school.png' %}" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+     <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sobre Nosotros</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              La gestion escolar es un proceso de gran importancia para el desarrollo de la educacion. El objetivo de este software es facilitar el trabajo de los profesores y administrativos de un colegio.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Control de asistencias</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Gestion de calificaciones</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Registro de pagos</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>El sistema esta disenado para ser facilmente utilizable y escalable segun las necesidades del colegio. El sistema tambien esta programado para ser seguro y confiable.</p>
+            <a href="#" class="read-more"><span>Conocer mas</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Planes</h2>
+        <p>El precio de nuestro software es muy accesible. Tenemos diferentes planes para adecuarnos a tus necesidades.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Plan Básico</h3>
+              <h4><sup>$</sup>50<span> / mes</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>1 usuario administrador</span></li>
+                <li><i class="bi bi-check"></i> <span>5 profesores</span></li>
+                <li><i class="bi bi-check"></i> <span>100 estudiantes</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Soporte tecnico</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Capacitaciones</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Comprar</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>Plan Estándar</h3>
+              <h4><sup>$</sup>100<span> / mes</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>3 usuarios administradores</span></li>
+                <li><i class="bi bi-check"></i> <span>10 profesores</span></li>
+                <li><i class="bi bi-check"></i> <span>500 estudiantes</span></li>
+                <li><i class="bi bi-check"></i> <span>Soporte tecnico</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Capacitaciones</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Comprar</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Plan Empresarial</h3>
+              <h4><sup>$</sup>200<span> / mes</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>5 usuarios administradores</span></li>
+                <li><i class="bi bi-check"></i> <span>20 profesores</span></li>
+                <li><i class="bi bi-check"></i> <span>1000 estudiantes</span></li>
+                <li><i class="bi bi-check"></i> <span>Soporte tecnico</span></li>
+                <li><i class="bi bi-check"></i> <span>Capacitaciones</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Comprar</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonios</h2>
+        <p>Necesitas información sobre los ex alumnos de tu institución?</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'general/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                <h3>Hector Valencia</h3>
+                <h4>Estudiante</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Tu portal de alumnos es muy útil para contactar a antiguos compañeros de promoción.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'general/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                <h3>Marta Hernandez</h3>
+                <h4>Profesora</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Gracias por este software tan amigable y seguro.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Faq 2 Section -->
+    <section id="faq-2" class="faq-2 section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Preguntas Frecuentes</h2>
+        <p>Conoce las respuestas a las preguntas más comunes sobre nuestro portal de alumnos.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>¿Cómo puedo recuperar mi contraseña?</h3>
+                <div class="faq-content">
+                  <p>Puedes recuperar tu contraseña en el apartado de "Iniciar Sesión", pulsando en el botón "He olvidado mi contraseña". Se te enviará un correo electrónico con un enlace para recuperar tu contraseña.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>¿Cómo puedo ver mis notas?</h3>
+                <div class="faq-content">
+                  <p>Puedes ver tus notas en el apartado de "Mi perfil", pulsando en el botón "Notas". Se te mostrará un listado de tus notas.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>¿Cómo puedo ver mis tareas?</h3>
+                <div class="faq-content">
+                  <p>Puedes ver tus tareas en el apartado de "Mi perfil", pulsando en el botón "Tareas". Se te mostrará un listado de tus tareas.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>¿Cómo puedo ver mis mensajes?</h3>
+                <div class="faq-content">
+                  <p>Puedes ver tus mensajes en el apartado de "Mi perfil", pulsando en el botón "Mensajes". Se te mostrará un listado de tus mensajes.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>¿Cómo puedo ver mis amigos?</h3>
+                <div class="faq-content">
+                  <p>Puedes ver tus amigos en el apartado de "Mi perfil", pulsando en el botón "Amigos". Se te mostrará un listado de tus amigos.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq 2 Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p>Puedes ponerte en contacto con nosotros a través de este formulario</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Dirección</h3>
+                  <p>Av. de la Constitución, 12, 28014 Colombia</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Teléfono</h3>
+                  <p>+57 914 00 00 00</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Correo electrónico</h3>
+                  <p>info@escuela.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Tu nombre</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Tu correo electrónico</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Asunto</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Mensaje</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Cargando</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
+
+                  <button type="submit">Enviar mensaje</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Suscribete a nuestra newsletter</h4>
+            <p>Suscríbete a nuestra newsletter y recibe las últimas noticias sobre nuestros productos y servicios!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Suscribirse"></div>
+              <div class="loading">Cargando</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Tu solicitud de suscripción ha sido enviada. ¡Gracias!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Arsha</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Teléfono:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Enlaces útiles</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Sobre nosotros</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Servicios</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Términos de servicio</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nuestros servicios</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Diseño web</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Desarrollo web</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Gestión de productos</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Síguenos</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra y vivamus elementum semper nisi</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Derechos de autor</span> <strong class="px-1 sitename">Arsha</strong> <span>Todos los derechos reservados</span></p>
+      <div class="credits">
+        <!-- Todos los enlaces en el pie de página deben permanecer intactos. -->
+        <!-- Puedes eliminar los enlaces solo si has comprado la versión pro. -->
+        <!-- Información de licencia: https://bootstrapmade.com/license/ -->
+        <!-- Compra la versión pro con formulario de contacto funcional: [buy-url] -->
+        Diseñado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'general/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'general/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'general/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'general/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'general/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'general/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'general/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'general/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'general/js/main.js' %}"></script>
+
+</body>
+
+</html>
+
+
+
+
+{% comment %} <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
@@ -78,4 +612,4 @@
   {% include "school/footer.html" %}
 </body>
 
-</html>
+</html> {% endcomment %}
