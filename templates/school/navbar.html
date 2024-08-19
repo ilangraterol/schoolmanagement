@@ -1,33 +1,29 @@
 {% load static %}
 <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-  <a href="index.html" class="logo d-flex align-items-center me-auto">
+  <a href="/" class="logo d-flex align-items-center me-auto">
     <!-- Uncomment the line below if you also wish to use an image logo -->
-    <img src="{% static 'general/img/logo.png' %}" alt=""> 
+    <img src="{% static 'general/img/logo.png' %}" alt="" > 
     <h1 class="sitename">School</h1>
   </a>
 
   <nav id="navmenu" class="navmenu">
     <ul>
-      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="/" class="active">Home</a></li>
       <li><a href="#about">Nosotros</a></li>
    
       <li><a href="#pricing">Precios</a></li>
-      <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <li class="dropdown"><a href="#"><span>Nuestros servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
         <ul>
-          <li><a href="#">Dropdown 1</a></li>
-          <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#">Cursos</a></li>
+          <li class="dropdown"><a href="#"><span>Otros servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Deep Dropdown 1</a></li>
-              <li><a href="#">Deep Dropdown 2</a></li>
-              <li><a href="#">Deep Dropdown 3</a></li>
-              <li><a href="#">Deep Dropdown 4</a></li>
-              <li><a href="#">Deep Dropdown 5</a></li>
+              <li><a href="#">Becas</a></li>
+              <li><a href="#">Informes</a></li>
+              <li><a href="#">Otros servicios</a></li>
             </ul>
           </li>
-          <li><a href="#">Dropdown 2</a></li>
-          <li><a href="#">Dropdown 3</a></li>
-          <li><a href="#">Dropdown 4</a></li>
+          <li><a href="#">Recursos</a></li>
         </ul>
       </li>
       <li><a href="#contact">Contact</a></li>
